@@ -185,3 +185,8 @@ docker compose down -v      # stop AND delete all data volumes — destructive
 - **License:** see [LICENSE](LICENSE).
 - **Issues / questions:** open an issue on this repository.
 - Commercial support is available from [SOCFortress](https://www.socfortress.co).
+
+## GitLab CI baseline
+
+GitLab CI runs repository integrity validation and centralized ClamAV scanning on the isolated `phase4-untrusted` runner. The baseline validates tracked Python syntax, shell syntax, and JSON parsing without direct Internet access. Repository-specific build and test gates remain additive to this baseline.
+
